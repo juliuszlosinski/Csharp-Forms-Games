@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Racing.exe" version="1.0.0.0" publicKeyToken="f9c63b0ea64a23c4" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Racing" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Racing.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opcje manifestu kontroli konta użytkownika
+          Jeśli chcesz zmienić poziom kontroli konta użytkownika systemu Windows, zastąp węzeł 
+          requestedExecutionLevel jednym z następujących.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Jeśli chcesz użyć wirtualizacji plików i rejestru do celów zgodności wstecznej, 
+         usuń węzeł requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>RHmYUZFsT7uODPedaxG/LrgGDvBSaHzSazVF7qrtLsk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>pWsqrh5n+pB+7SbTqrhl1GigIzOdkUzk/kkBFgpmtvg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Racing.exe" size="23186912">
+      <assemblyIdentity name="Racing" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jjSFAypaq6a1CXhcdmWQgGGgi/zDngukZAx6XUjLY74=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Racing.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-O1B69M2\Julek" issuerKeyHash="76cb3c50abe7a8e1020b5b02e064815759318005" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>FVikJ4xjd0Dgb7AZpPn2Ycgy7CbuUY+zEyRuZJsKk9Q=</DigestValue></Reference></SignedInfo><SignatureValue>BK+4Yalm3Ye4mPTgCqJ4kOu+gaZCFH1hns6+9xH2BVuxw9OJdw2anmPTmn0kCih5J61kDobalAAXdgpMGPVjRXgppRnDXPi5Hjl/lnhy0Cg0wDfPNQgxEjR0O7AiGogLXsxrWaz1zdiS1jcq2io4Vw5tmQnfJ7AICE5Ad2DsbKo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2lAot590GNfZzcyliopK4yKkez+C7U6onxHBuN4lINj/ug30tiDKDr3+mR0LZBiEo89rDGgsZXY0rjxS+dGzjQjkXmq8VbT6gywT8dAhnvhGvwkQXSWC6g1MEXe/3eQ34T5HamAXi7cJ3Qz4sdl7jnEyHN6pOfY00ZiAWaf7K2U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d4930a9b646e2413b38f51ee26ec32c861f6f9a419b06fe04077638c27a45815" Description="" Url=""><as:assemblyIdentity name="Racing.exe" version="1.0.0.0" publicKeyToken="f9c63b0ea64a23c4" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-O1B69M2\Julek</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>dtlceF4D3+jQ7BfRKzuHvD4xtXjZjUOgctsatKIrPx8=</DigestValue></Reference></SignedInfo><SignatureValue>Rn68D2xWbSjoglQdb8Lnfw8r/AiW5i5zgFrqLnXdJFOqDXe/5mqWnpytYsiKMbXLHtQG69hiMrwhdVMRgq3OCNbAkzWaliq1hzyMvK2ZK0iK7ofdjGMlNPa8M0Nhp+5AUK7MiFkcdp/cEbguVASnT01MV0vPSxKQo0jjNtihCUw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2lAot590GNfZzcyliopK4yKkez+C7U6onxHBuN4lINj/ug30tiDKDr3+mR0LZBiEo89rDGgsZXY0rjxS+dGzjQjkXmq8VbT6gywT8dAhnvhGvwkQXSWC6g1MEXe/3eQ34T5HamAXi7cJ3Qz4sdl7jnEyHN6pOfY00ZiAWaf7K2U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQR3DiJFalRY1MyRGDlarphzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAE8AMQBCADYAOQBNADIAXABKAHUAbABlAGswHhcNMjAwNzE5MTE1MDI3WhcNMjEwNzE5MTc1MDI3WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAE8AMQBCADYAOQBNADIAXABKAHUAbABlAGswgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANpQKLefdBjX2c3MpYqKSuMipHs/gu1OqJ8RwbjeJSDY/7oN9LYgyg69/pkdC2QYhKPPawxoLGV2NK48UvnRs40I5F5qvFW0+oMsE/HQIZ74Rr8JEF0lguoNTBF3v93kN+E+R2pgF4u3Cd0M+LHZe45xMhzeqTn2NNGYgFmn+ytlAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAeyzrv62aNHzSXjd/vbNWAQFGci+gvnl3TKFggPEzwSp6754GDp18kUt/4Tgtx2DhtPv8ATr/VTpFqyQQBUGTrEBqOHgNNbIfP3QNBKqUVPCb+ZPeKFMFXH1z4He+8Ju4RD+nH0LzH3u2ReTr/Vw2oyEvuaM0+wWkjAFz1MXID1o=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
