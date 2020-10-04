@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DogFly.exe" version="1.0.0.0" publicKeyToken="e02f346b9455489b" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DogFly" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="DogFly.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opcje manifestu kontroli konta użytkownika
+          Jeśli chcesz zmienić poziom kontroli konta użytkownika systemu Windows, zastąp węzeł 
+          requestedExecutionLevel jednym z następujących.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Jeśli chcesz użyć wirtualizacji plików i rejestru do celów zgodności wstecznej, 
+         usuń węzeł requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aGuh97VN7uQAMZxe+TeT/RJMHD08pfQNPoYX2qfKVHU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DogFly.exe" size="4808160">
+      <assemblyIdentity name="DogFly" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8o3mBSRnjS3tQoPdITVmeUkZsTmFAjxYUDzGSgIOZLE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>B22Zuy4+Zsyljsf+NmlsBGqjqZtgOQBnCzpncmKJp7s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DogFly.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-O1B69M2\Julek" issuerKeyHash="6ac9ef12d238eb83222bad5d2c66159eddf74c89" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>x2F5VQZ1lxw+0Akm3gmMmHWgHRLlmHNCkVk55cS5kJI=</DigestValue></Reference></SignedInfo><SignatureValue>ZIdrId/il9GLoX3R3P7QpQVEP2kHo3nNE3SqTUL9BT3jXEKJAkPaIAxT4Ca7I4A3VIdgAwdS6FC/QzDQmIzZCtLH8Xn9VgWOCuCOb6/DbcUl9m6pj0uFYI+jaMnuclmmFSK9XmBbuZCx57pOV0y+selfi16gvPkSdt7dRGons1w=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>7K16dOPlrVyzXi06gZXend8i7KuGhxbhBMUVPV/R2GT0ronHkq13QRaxvxgklBOZIQc/WmbEIULYPlulX4VMLq22eYMbVGx2ZMYMG6xumnjGTQgRoClD3GFhlXHD9t1qybWOkJQEE3BkEon74lekBUqfPJt4rdsIWwfRPRddvgE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9290b9c4e5395991427398e5121da075988c09de2609d03e1c977506557961c7" Description="" Url=""><as:assemblyIdentity name="DogFly.exe" version="1.0.0.0" publicKeyToken="e02f346b9455489b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-O1B69M2\Julek</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Swa6AqLqYCpfvVOM0GcFCYjDhq2SSOm4cxdV8sI2se8=</DigestValue></Reference></SignedInfo><SignatureValue>SATJK9+gOPI8sIPqmBh+ePvfoR4pYlcQkSaZbo60WxdqN4isMaNNEzD621xxbk4nbnIQcdT596NOZCzhmOs3zA+qZRbvIxYGdRv1f3LCkvACroEBvx4UvdYcDLoC5YrBNQimJbUZx8ELCwSPXXEHOnCYLgDnyqLGiFe8NBssyv8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>7K16dOPlrVyzXi06gZXend8i7KuGhxbhBMUVPV/R2GT0ronHkq13QRaxvxgklBOZIQc/WmbEIULYPlulX4VMLq22eYMbVGx2ZMYMG6xumnjGTQgRoClD3GFhlXHD9t1qybWOkJQEE3BkEon74lekBUqfPJt4rdsIWwfRPRddvgE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQYrbiIwdqpbpBIWuOy51irzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAE8AMQBCADYAOQBNADIAXABKAHUAbABlAGswHhcNMjAwNzI4MTAxNDAwWhcNMjEwNzI4MTYxNDAwWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAE8AMQBCADYAOQBNADIAXABKAHUAbABlAGswgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOytenTj5a1cs14tOoGV3p3fIuyrhocW4QTFFT1f0dhk9K6Jx5Ktd0EWsb8YJJQTmSEHP1pmxCFC2D5bpV+FTC6ttnmDG1RsdmTGDBusbpp4xk0IEaApQ9xhYZVxw/bdasm1jpCUBBNwZBKJ++JXpAVKnzybeK3bCFsH0T0XXb4BAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAYUHP7QrxBmnSqsrS/hhpjBtqy+39l/Uon1BLmKgR2N8fVuXPXhzCq1YwzK2Kl7WbSuQFd6gH2JRWd/CZdnz4+YvNccO6qOlJ50q41WBM2hTKXMFpVD/XYPnHU9RRqHVYotxiQMDmdmp0Mr4gGlrJrN7aWhrOQmNrXPrXcS1sQp8=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
